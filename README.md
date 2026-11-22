@@ -13,7 +13,7 @@ A codeless kext (one `Info.plist`, no binary) for Lenovo Legion laptops whose in
 ## What it can't do
 
 - Keyboard lighting cannot be controlled from macOS: the lighting interface is claimed and left alone. The backlight stays in whatever state the firmware boots it to.
-- It is specific to `048D:C195` interface 1. Other ITE keyboard controllers (the Legion Pro 5's `048D:C995`, for example) need their own product ID in the plist.
+- It is specific to `048D:C195` interface 1. Other ITE keyboard controllers (the Legion Pro 5's `048D:C995`, for example) need their own product ID in the plist. Some Legion models do not need it at all: the owner of a Legion 5 15IRX10 says the keyboard there looks like a PS/2 one ([his comment](https://github.com/AZYsGithub/legion-15irx10-hackintosh/issues/1#issuecomment-6942047295), not checked by me).
 - The reset loop itself was not captured in a log on this laptop; the symptom and the fix match the Legion Pro 5 16IRX9 case this was modelled on, and the kext fixed it here on the first try.
 
 ## Installation
