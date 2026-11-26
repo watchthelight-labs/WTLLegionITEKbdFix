@@ -57,6 +57,7 @@ IOKit picks the driver with the highest probe score for each interface nub. A pe
 ## Credits
 
 - [legion-pro5-hackintosh](https://github.com/Ammarrrrrrr/legion-pro5-hackintosh) by Ammarrrrrrr: the `LegionRGBUSBFix.kext` pattern for the ITE 8295 (`048D:C995`), which this copies for the 8258. Only the matching keys were reused.
+- [Legion-RGB-macOS](https://github.com/TejasLamba2006/Legion-RGB-macOS) by TejasLamba2006 (MIT): keyboard lighting for Legion 4-zone ITE controllers on macOS by talking to the USB device directly. Read as a reference; its table has no `048D:C195`, and nothing from it is used here.
 
 ## Licence
 
